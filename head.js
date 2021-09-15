@@ -6,14 +6,15 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function() {
-  return assertEqual[0];
+const head = function(num1) {
+  return num1[0];
 };
-
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
 
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
 assertEqual(head([]),);
+
+assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual(1, 1);
+
